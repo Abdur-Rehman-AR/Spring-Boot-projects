@@ -1,0 +1,26 @@
+package com.example.container_basics.Beans;
+
+public class Person {
+ 
+    private String name;
+    private int rollno;
+
+    public Person() {}
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public int getRollno() {
+        return rollno;
+    }
+    public void setRollno(int rollno) {
+        this.rollno = rollno;
+    }
+    public void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Roll No: " + rollno);
+    }
+}
