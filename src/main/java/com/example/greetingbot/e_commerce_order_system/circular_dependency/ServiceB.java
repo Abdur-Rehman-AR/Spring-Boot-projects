@@ -1,0 +1,14 @@
+package com.example.greetingbot.e_commerce_order_system.circular_dependency;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class ServiceB{
+
+    final private ServiceA serviceA;
+
+    public ServiceB(ServiceA serviceA)
+    {
+        this.serviceA = serviceA;
+    }
+}
