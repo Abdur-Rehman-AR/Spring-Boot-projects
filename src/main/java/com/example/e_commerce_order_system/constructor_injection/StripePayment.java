@@ -6,8 +6,7 @@ import org.springframework.stereotype.Component;
 // Spring will manage this class as a bean
 @Component
 // This tells spring to always use this class as a 1st choice (if there are
-// multiple
-// classes) to create the object.
+// multiple classes) to create the object.
 @Primary
 public class StripePayment implements PaymentGateway {
 
