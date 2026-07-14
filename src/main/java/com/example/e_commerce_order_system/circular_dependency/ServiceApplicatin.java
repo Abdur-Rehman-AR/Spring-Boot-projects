@@ -6,9 +6,10 @@ import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class ServiceApplicatin {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         
-        ApplicationContext context = SpringApplication.run(main.class, args);
+        ApplicationContext context = SpringApplication.run(ServiceApplicatin.class, args);
 
         // showing circular dependency
         ServiceA serviceA = context.getBean(ServiceA.class);

@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ServiceB{
 
+    @SuppressWarnings("unused")
     final private ServiceA serviceA;
 
     public ServiceB(ServiceA serviceA)
